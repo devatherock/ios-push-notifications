@@ -1,10 +1,14 @@
 {
     "Simulator Target Bundle": "io.github.devatherock.Notifications",
     "aps": {
-        "category": "Test title",
-        "alert": "Test push notification content",
+        "alert": {
+            "body": "Test push notification content",
+            "title": "Test title"
+        },
         "sound": "default",
         "badge": 1,
-        "mutable_content": 1
-    }
+        "mutable_content": 1,
+        "category":"CustomSamplePush"
+    },
+    "urlImageString":"https://res.cloudinary.com/demo/image/upload/sample.jpg"
 }

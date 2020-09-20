@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         for (key, value) in aps {
             message = "\(message)\n\(key): \(value)"
         }
-        let alert = UIAlertController(title: aps["category"] as? String, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Push attributes", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
