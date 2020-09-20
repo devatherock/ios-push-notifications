@@ -26,8 +26,12 @@ class ViewController: UIViewController {
         }
     }
     
-    func processNotification(aps: [String : AnyObject]){
-        let alert = UIAlertController(title: aps["category"] as? String, message: aps["alert"] as? String, preferredStyle: .alert)
+    func processNotification(aps: [String : AnyObject]) {
+        var message = ""
+        for (key, value) in aps {
+            message = "\(message)\n\(key): \(value)"
+        }
+        let alert = UIAlertController(title: aps["category"] as? String, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }

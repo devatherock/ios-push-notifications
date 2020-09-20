@@ -52,7 +52,7 @@ extension UIViewController {
         UIApplication.shared.applicationIconBadgeNumber = 0
         let notifications =  UNUserNotificationCenter.current()
         notifications.removeAllPendingNotificationRequests()
-        notitications.removeAllDeliveredNotifications()
+        //notitications.removeAllDeliveredNotifications()
         
     }
     

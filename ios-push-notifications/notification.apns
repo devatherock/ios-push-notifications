@@ -1,0 +1,10 @@
+{
+    "Simulator Target Bundle": "io.github.devatherock.Notifications",
+    "aps": {
+        "category": "Test title",
+        "alert": "Test push notification content",
+        "sound": "default",
+        "badge": 1,
+        "mutable_content": 1
+    }
+}
